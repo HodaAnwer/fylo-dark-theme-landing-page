@@ -47,396 +47,743 @@
       margin: 0px;
     }
     
-    #backgroundDiv {
-      background-color: hsl(219, 30%, 18%);
-      padding-left: 0px;
-      padding-right: 0px;
+     ::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: gray;
+      opacity: 0.6;
+      /* Firefox */
     }
     
-    #bottomBackgroundDiv {
-      background-color: hsl(218, 28%, 13%);
+     :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: gray;
     }
     
-    #imgBackgroundDiv {
-      margin-top: -275px;
+     ::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: gray;
     }
     
-    #logoDiv {
-      display: flex;
+    @media only screen and (min-width:768px) {
+      #backgroundDiv {
+        background-color: hsl(219, 30%, 18%);
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      #bottomBackgroundDiv {
+        background-color: hsl(218, 28%, 13%);
+      }
+      #imgBackgroundDiv {
+        margin-top: -275px;
+      }
+      #logoDiv {
+        display: flex;
+      }
+      #img-logoDiv {
+        margin-left: 5%;
+        margin-top: 50px;
+      }
+      #a-logoDiv {
+        width: 25%;
+        margin-left: 60%;
+        margin-top: 60px;
+      }
+      .a-logo {
+        padding-right: 16%;
+        color: hsl(0, 0%, 80%);
+        text-decoration: none;
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 1vw;
+      }
+      .a-logo:hover {
+        color: hsl(0, 0%, 100%);
+        text-decoration: underline;
+      }
+      #illustrationDiv {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 100px;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+      }
+      #h1-illustration {
+        margin-top: 43px;
+        margin-bottom: 43px;
+        color: hsl(0, 0%, 100%);
+        font-family: raleway;
+        font-weight: 700;
+        font-size: 3vw;
+      }
+      #p-illustration {
+        margin-bottom: 35px;
+        color: hsl(0, 0%, 80%);
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 1.6vw;
+      }
+      #but-illustration {
+        width: 48%;
+        height: 60px;
+        background-image: linear-gradient(to left, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
+        color: hsl(0, 0%, 100%);
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 1.2vw;
+        border-top: none;
+        border-left: none;
+      }
+      #but-illustration:hover {
+        background-image: linear-gradient(to left, hsl(176, 68%, 64%), hsl(176, 68%, 80%))
+      }
+      #access-anywhereDiv,
+      #securityDiv,
+      #collaborationDiv,
+      #any-fileDiv {
+        width: 40%;
+        color: hsl(0, 0%, 100%);
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 68px;
+      }
+      .twoDiv {
+        display: flex;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      .h2-twoDiv {
+        margin-top: 21px;
+        margin-bottom: 14px;
+        color: hsl(0, 0%, 100%);
+        font-family: raleway;
+        font-weight: 700;
+        font-size: 1.5vw;
+      }
+      .p-twoDiv {
+        color: hsl(0, 0%, 80%);
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 0.91vw;
+      }
+      #illustration-stay-productiveDiv {
+        display: flex;
+        margin-top: 43px;
+      }
+      #left-illustration-stay-productiveDiv {
+        margin-left: 6%;
+      }
+      #right-illustration-stay-productiveDiv {
+        width: 40%;
+        padding-top: 35px;
+        margin-top: 70.55px;
+        margin-bottom: 70.55px;
+        margin-left: 5%;
+      }
+      #h1-illustration-stay-productiveDiv {
+        font-family: raleway;
+        font-weight: 700;
+        font-size: 3.3vw;
+        margin-bottom: 17px;
+        color: hsl(0, 0%, 100%);
+      }
+      .p-illustration-stay-productiveDiv {
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 1.2vw;
+        margin-bottom: 17px;
+        color: hsl(0, 0%, 80%);
+      }
+      #a-illustration-stay-productiveDiv {
+        text-decoration: none;
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 1.2vw;
+        color: hsl(176, 68%, 30%);
+      }
+      #hr-illustration-stay-productiveDiv {
+        width: 31%;
+        color: hsl(176, 68%, 64%);
+        margin-top: 3px;
+        opacity: 1;
+        margin-left: 0px;
+      }
+      #commentsDiv {
+        display: flex;
+        justify-content: center;
+      }
+      .comment {
+        background-color: hsl(219, 30%, 18%);
+        width: 23%;
+        margin-bottom: 350px;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+        padding-top: 30px;
+        padding-bottom: 0px;
+      }
+      #comment1,
+      #comment2 {
+        margin-right: 3.5%;
+      }
+      .p-comment {
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 0.95vw;
+        color: hsl(0, 0%, 80%);
+      }
+      .profileDiv {
+        display: flex;
+        margin-top: 5px;
+        margin-bottom: 3px;
+      }
+      .profile {
+        width: 25px;
+        height: 25px;
+        margin-top: 3px;
+      }
+      .name {
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 0.75vw;
+        color: hsl(0, 0%, 90%);
+        margin-left: 2%;
+      }
+      .founder {
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 0.6vw;
+        color: hsl(0, 0%, 70%);
+        margin-top: -15px;
+        margin-left: 11%;
+        margin-bottom: 15px;
+      }
+      #img-quotes {
+        margin-left: 11.3%;
+        margin-top: 120px;
+        margin-bottom: -15px;
+      }
+      #singUpDiv {
+        width: 60%;
+        margin-left: 20%;
+        margin-top: -150px;
+        position: absolute;
+        text-align: center;
+        background-color: hsl(217, 28%, 15%);
+        box-shadow: 10px 10px hsl(216, 53%, 10%);
+      }
+      #h1-pDiv {
+        padding-left: 13%;
+        padding-right: 13%;
+        margin-top: 50px;
+      }
+      #h1-singUpDiv {
+        font-family: raleway;
+        font-weight: 700;
+        font-size: 2.2vw;
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 30px;
+      }
+      #p-singUpDiv {
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 0.9vw;
+        color: hsl(0, 0%, 80%);
+        margin-bottom: 30px;
+      }
+      #inp-email {
+        width: 53%;
+        height: 45px;
+        background-color: hsl(0, 0%, 100%);
+        color: black;
+        border: none;
+        margin-right: 3%;
+        margin-bottom: 20px;
+        padding-left: 5%;
+        outline: none;
+      }
+      #alert {
+        color: hsl(0, 100%, 63%);
+        padding-right: 430px;
+        margin-bottom: 20px;
+      }
+      #but-singUpDiv {
+        width: 25%;
+        height: 45px;
+        background-image: linear-gradient(to left, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
+        color: hsl(0, 0%, 100%);
+        border-top: none;
+        border-left: none;
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 1vw;
+        color: hsl(0, 0%, 100%);
+      }
+      #but-singUpDiv:hover {
+        background-image: linear-gradient(to left, hsl(176, 68%, 64%), hsl(176, 68%, 80%))
+      }
+      #bottomDiv {
+        background-color: hsl(216, 53%, 9%);
+        padding-top: 100px;
+        padding-bottom: 30px;
+      }
+      #fylo-logo {
+        margin-left: 10%;
+        margin-top: 100px;
+        margin-bottom: 30px;
+      }
+      #icon-bottomDiv {
+        display: flex;
+      }
+      #img-pDiv {
+        width: 30%;
+        margin-left: 10%;
+      }
+      #p-bottomDiv {
+        margin-top: -25px;
+        margin-left: 10%;
+        margin-right: 20%;
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 1vw;
+        color: hsl(0, 0%, 80%);
+      }
+      #phone-emailDiv {
+        width: 20%;
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 1vw;
+        color: hsl(0, 0%, 80%);
+      }
+      #phone,
+      #email {
+        margin-right: 20px;
+      }
+      #aboutUsDiv,
+      #contactUsDiv {
+        width: 10%;
+      }
+      .a-bottomDiv {
+        text-decoration: none;
+        display: block;
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 1vw;
+        color: hsl(0, 0%, 80%);
+        margin-bottom: 15px;
+      }
+      .a-bottomDiv:hover {
+        color: hsl(0, 0%, 100%);
+      }
+      #socialMediaDiv {
+        display: flex;
+        justify-content: center;
+      }
+      .fa {
+        padding: 5px;
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        background: hsl(216, 53%, 9%);
+        color: hsl(0, 0%, 80%);
+        margin-right: 15px;
+      }
+      #imgBackgroundDiv-mobile {
+        display: none;
+      }
     }
     
-    #img-logoDiv {
-      margin-left: 5%;
-      margin-top: 50px;
+    @media only screen and (max-width:767px) {
+      body {
+        width: 375px;
+      }
+      #backgroundDiv {
+        background-color: hsl(219, 30%, 18%);
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      #bottomBackgroundDiv {
+        background-color: hsl(218, 28%, 13%);
+      }
+      #imgBackgroundDiv-mobile {
+        margin-top: -20px;
+        background-color: hsl(219, 30%, 18%);
+        /* position: relative; */
+        /* z-index: 0; */
+      }
+      #logoDiv {
+        display: flex;
+        /* justify-content: center; */
+      }
+      #img-logoDiv {
+        margin-left: 6%;
+        margin-top: 30px;
+        width: 90px;
+        height: 26.59px;
+      }
+      #a-logoDiv {
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 40px;
+      }
+      .a-logo {
+        padding-right: 10%;
+        color: hsl(0, 0%, 80%);
+        text-decoration: none;
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 3vw;
+      }
+      .a-logo:hover {
+        color: hsl(0, 0%, 100%);
+        text-decoration: underline;
+      }
+      #illustrationDiv {
+        width: 100%;
+        /* margin-left: 25%; */
+        /* margin-right: 25%; */
+        margin-top: 50px;
+        text-align: center;
+        background-color: hsl(218, 28%, 13%);
+        /* position: absolute; */
+        /* z-index: 0; */
+      }
+      #img-illustrationDiv {
+        background-color: hsl(219, 30%, 18%);
+      }
+      #img-illustration {
+        width: 85%;
+        position: relative;
+        z-index: 2;
+      }
+      #h1-illustration {
+        margin-top: 43px;
+        margin-bottom: 20px;
+        margin-left: 6%;
+        margin-right: 6%;
+        color: hsl(0, 0%, 100%);
+        font-family: raleway;
+        font-weight: 700;
+        font-size: 7vw;
+      }
+      #p-illustration {
+        margin-bottom: 25px;
+        margin-left: 6%;
+        margin-right: 6%;
+        color: hsl(0, 0%, 80%);
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 4vw;
+      }
+      #but-illustration {
+        width: 60%;
+        height: 45px;
+        background-image: linear-gradient(to left, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
+        color: hsl(0, 0%, 100%);
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 4vw;
+        border-top: none;
+        border-left: none;
+        margin-bottom: 100px;
+      }
+      #but-illustration:hover {
+        background-image: linear-gradient(to left, hsl(176, 68%, 64%), hsl(176, 68%, 80%))
+      }
+      #access-anywhereDiv,
+      #securityDiv,
+      #collaborationDiv,
+      #any-fileDiv {
+        width: 100%;
+        color: hsl(0, 0%, 100%);
+        /* margin-left: 6%; */
+        /* margin-right: 10%; */
+        margin-bottom: 80px;
+        /* padding-top: 100px; */
+        text-align: center;
+        /* display: flex; */
+        /* justify-content: center; */
+      }
+      /* .twoDiv {
+        /* display: flex; */
+      /* text-align: center; */
+      /* margin-left: 10%; */
+      /* margin-right: 10%; */
+      /* }  */
+      .h2-twoDiv {
+        margin-top: 30px;
+        margin-bottom: 14px;
+        color: hsl(0, 0%, 100%);
+        font-family: raleway;
+        font-weight: 700;
+        font-size: 5vw;
+      }
+      .p-twoDiv {
+        margin-left: 6%;
+        margin-right: 6%;
+        color: hsl(0, 0%, 80%);
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 3.8vw;
+      }
+      /* #illustration-stay-productiveDiv { */
+      /* display: flex; */
+      /* margin-top: 43px; */
+      /* } */
+      #left-illustration-stay-productiveDiv {
+        margin-left: 6%;
+        margin-right: 6%;
+        margin-top: 150px;
+      }
+      #img-illustration-stay-productiveDiv {
+        width: 100%;
+      }
+      #right-illustration-stay-productiveDiv {
+        /* width: 100%; */
+        padding-top: 35px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        margin-left: 6%;
+      }
+      #h1-illustration-stay-productiveDiv {
+        font-family: raleway;
+        font-weight: 700;
+        font-size: 5.5vw;
+        margin-bottom: 17px;
+        color: hsl(0, 0%, 100%);
+      }
+      .p-illustration-stay-productiveDiv {
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 4vw;
+        margin-bottom: 17px;
+        /* margin-left: 6%; */
+        margin-right: 6%;
+        color: hsl(0, 0%, 80%);
+      }
+      #a-illustration-stay-productiveDiv {
+        text-decoration: none;
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 3.5vw;
+        color: hsl(176, 68%, 30%);
+      }
+      #hr-illustration-stay-productiveDiv {
+        width: 37%;
+        color: hsl(176, 68%, 64%);
+        margin-top: 3px;
+        opacity: 1;
+        margin-left: 0px;
+      }
+      #commentsDiv {
+        padding-bottom: 300px;
+      }
+      .comment {
+        background-color: hsl(219, 30%, 18%);
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 30px;
+        padding-left: 5%;
+        padding-right: 1.5%;
+        padding-top: 30px;
+        padding-bottom: 10px;
+      }
+      /* #comment1, */
+      /* #comment2 { */
+      /* margin-right: 3.5%; */
+      /* } */
+      .p-comment {
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 3vw;
+        color: hsl(0, 0%, 80%);
+      }
+      .profileDiv {
+        display: flex;
+        margin-top: 5px;
+        margin-bottom: 20px;
+      }
+      .profile {
+        width: 25px;
+        height: 25px;
+        margin-top: 3px;
+      }
+      .name {
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 3vw;
+        color: hsl(0, 0%, 90%);
+        margin-left: 2%;
+      }
+      .founder {
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 2vw;
+        color: hsl(0, 0%, 70%);
+        margin-top: -35px;
+        margin-left: 11%;
+        /* margin-bottom: 50px; */
+      }
+      #img-quotes {
+        width: 20px;
+        height: 16.5px;
+        margin-left: 11.3%;
+        margin-top: 100px;
+        /* margin-bottom: -15px; */
+      }
+      /* #comment3 { */
+      /* margin-bottom: 300px; */
+      /* } */
+      #singUpDiv {
+        width: 86%;
+        margin-left: 7%;
+        margin-top: -150px;
+        position: absolute;
+        text-align: center;
+        background-color: hsl(217, 28%, 15%);
+        box-shadow: 10px 10px hsl(216, 53%, 10%);
+      }
+      #h1-pDiv {
+        padding-left: 9%;
+        padding-right: 9%;
+        margin-top: 40px;
+      }
+      #h1-singUpDiv {
+        font-family: raleway;
+        font-weight: 700;
+        font-size: 5.5vw;
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 20px;
+      }
+      #p-singUpDiv {
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 3.5vw;
+        color: hsl(0, 0%, 80%);
+        margin-bottom: 30px;
+      }
+      #inp-email {
+        width: 85%;
+        height: 45px;
+        background-color: hsl(0, 0%, 100%);
+        color: black;
+        border: none;
+        margin-right: 3%;
+        margin-bottom: 20px;
+        padding-left: 7%;
+        outline: none;
+      }
+      #alert {
+        color: hsl(0, 100%, 63%);
+        /* padding-right: 430px; */
+        margin-bottom: 20px;
+      }
+      #but-singUpDiv {
+        width: 85%;
+        height: 45px;
+        background-image: linear-gradient(to left, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
+        color: hsl(0, 0%, 100%);
+        border-top: none;
+        border-left: none;
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 4vw;
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 15px;
+        outline: none;
+      }
+      #bottomDiv {
+        background-color: hsl(216, 53%, 9%);
+        padding-top: 100px;
+      }
+      #fylo-logo {
+        margin-left: 10%;
+        margin-top: 175px;
+        margin-bottom: 40px;
+      }
+      /* #icon-bottomDiv { */
+      /* display: flex; */
+      /* } */
+      #img-pDiv {
+        width: 88%;
+        margin-left: 6%;
+      }
+      #p-bottomDiv {
+        margin-top: -25px;
+        margin-left: 12%;
+        /* margin-right: 20%; */
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 4.2vw;
+        color: hsl(0, 0%, 80%);
+      }
+      #phone-emailDiv {
+        width: 80%;
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 4vw;
+        color: hsl(0, 0%, 80%);
+        margin-bottom: 75px;
+      }
+      #phone {
+        width: 15px;
+        height: 15px;
+        margin-left: 6%;
+        margin-right: 8%;
+      }
+      #email {
+        margin-left: 6%;
+        margin-right: 8%;
+        /* margin-bottom: 50px; */
+      }
+      #aboutUsDiv,
+      #contactUsDiv {
+        width: 100%;
+      }
+      #contactUsDiv {
+        margin-top: 50px;
+        margin-bottom: 75px;
+      }
+      .a-bottomDiv {
+        text-decoration: none;
+        display: block;
+        font-family: openSans;
+        font-weight: 400;
+        font-size: 4.5vw;
+        color: hsl(0, 0%, 80%);
+        margin-bottom: 15px;
+        margin-left: 6%;
+      }
+      .a-bottomDiv:hover {
+        color: hsl(0, 0%, 100%);
+      }
+      #socialMediaDiv {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+      }
+      .fa {
+        padding: 3px;
+        padding-top: 5px;
+        /* padding-left: 5px; */
+        font-size: 13px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        background: hsl(216, 53%, 9%);
+        color: hsl(0, 0%, 80%);
+        margin-right: 15px;
+      }
+      #imgBackgroundDiv {
+        display: none;
+      }
     }
-    
-    #a-logoDiv {
-      width: 25%;
-      margin-left: 60%;
-      margin-top: 60px;
-    }
-    
-    .a-logo {
-      padding-right: 16%;
-      color: hsl(0, 0%, 80%);
-      text-decoration: none;
-      font-family: openSans;
-      font-weight: 400;
-      font-size: 1vw;
-    }
-    
-    .a-logo:hover {
-      color: hsl(0, 0%, 100%);
-      text-decoration: underline;
-    }
-    
-    #illustrationDiv {
-      width: 50%;
-      margin-left: 25%;
-      margin-right: 25%;
-      margin-top: 100px;
-      text-align: center;
-      position: relative;
-      z-index: 2;
-    }
-    
-    #h1-illustration {
-      margin-top: 43px;
-      margin-bottom: 43px;
-      color: hsl(0, 0%, 100%);
-      font-family: raleway;
-      font-weight: 700;
-      font-size: 3vw;
-    }
-    
-    #p-illustration {
-      margin-bottom: 35px;
-      color: hsl(0, 0%, 80%);
-      font-family: openSans;
-      font-weight: 400;
-      font-size: 1.6vw;
-    }
-    
-    #but-illustration {
-      width: 48%;
-      height: 60px;
-      background-image: linear-gradient(to left, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
-      color: hsl(0, 0%, 100%);
-      font-family: openSans;
-      font-weight: 400;
-      font-size: 1.2vw;
-      border-top: none;
-      border-left: none;
-    }
-    
-    #but-illustration:hover {
-      background-image: linear-gradient(to left, hsl(176, 68%, 64%), hsl(176, 68%, 80%))
-    }
-    
-    #access-anywhereDiv,
-    #securityDiv,
-    #collaborationDiv,
-    #any-fileDiv {
-      width: 40%;
-      color: hsl(0, 0%, 100%);
-      margin-left: 10%;
-      margin-right: 10%;
-      margin-bottom: 68px;
-    }
-    
-    .twoDiv {
-      display: flex;
-      text-align: center;
-      margin-left: 10%;
-      margin-right: 10%;
-    }
-    
-    .h2-twoDiv {
-      margin-top: 21px;
-      margin-bottom: 14px;
-      color: hsl(0, 0%, 100%);
-      font-family: raleway;
-      font-weight: 700;
-      font-size: 1.5vw;
-    }
-    
-    .p-twoDiv {
-      color: hsl(0, 0%, 80%);
-      font-family: openSans;
-      font-weight: 400;
-      font-size: 0.91vw;
-    }
-    
-    #illustration-stay-productiveDiv {
-      display: flex;
-      margin-top: 43px;
-    }
-    
-    #left-illustration-stay-productiveDiv {
-      margin-left: 6%;
-    }
-    
-    #right-illustration-stay-productiveDiv {
-      width: 40%;
-      padding-top: 35px;
-      margin-top: 70.55px;
-      margin-bottom: 70.55px;
-      margin-left: 5%;
-    }
-    
-    #h1-illustration-stay-productiveDiv {
-      font-family: raleway;
-      font-weight: 700;
-      font-size: 3.3vw;
-      margin-bottom: 17px;
-      color: hsl(0, 0%, 100%);
-    }
-    
-    .p-illustration-stay-productiveDiv {
-      font-family: openSans;
-      font-weight: 400;
-      font-size: 1.2vw;
-      margin-bottom: 17px;
-      color: hsl(0, 0%, 80%);
-    }
-    
-    #a-illustration-stay-productiveDiv {
-      text-decoration: none;
-      font-family: openSans;
-      font-weight: 400;
-      font-size: 1.2vw;
-      color: hsl(176, 68%, 30%);
-    }
-    /* #a-illustration-stay-productiveDiv:hover,
-    #hr-illustration-stay-productiveDiv:hover,
-    #img-illustration-stay-productiveDiv:hover {
-      color: hsl(0, 0%, 80%);
-    } */
-    /* #inner-illustration-stay-productiveDiv:hover {
-      color: hsl(0, 0%, 80%);
-    } */
-    
-    #hr-illustration-stay-productiveDiv {
-      width: 31%;
-      color: hsl(176, 68%, 64%);
-      margin-top: 3px;
-      opacity: 1;
-      margin-left: 0px;
-    }
-    
-    #commentsDiv {
-      display: flex;
-      justify-content: center;
-    }
-    
-    .comment {
-      background-color: hsl(219, 30%, 18%);
-      width: 23%;
-      margin-bottom: 350px;
-      padding-left: 1.5%;
-      padding-right: 1.5%;
-      padding-top: 30px;
-      padding-bottom: 0px;
-    }
-    
-    #comment1,
-    #comment2 {
-      margin-right: 3.5%;
-    }
-    
-    .p-comment {
-      font-family: openSans;
-      font-weight: 400;
-      font-size: 0.95vw;
-      color: hsl(0, 0%, 80%);
-    }
-    
-    .profileDiv {
-      display: flex;
-      margin-top: 5px;
-      margin-bottom: 3px;
-    }
-    
-    .profile {
-      width: 25px;
-      height: 25px;
-      margin-top: 3px;
-    }
-    
-    .name {
-      font-family: openSans;
-      font-weight: 400;
-      font-size: 0.75vw;
-      color: hsl(0, 0%, 90%);
-      margin-left: 2%;
-    }
-    
-    .founder {
-      font-family: openSans;
-      font-weight: 400;
-      font-size: 0.6vw;
-      color: hsl(0, 0%, 70%);
-      margin-top: -15px;
-      margin-left: 11%;
-      margin-bottom: 15px;
-    }
-    
-    #img-quotes {
-      margin-left: 11.3%;
-      margin-top: 120px;
-      margin-bottom: -15px;
-    }
-    
-    #singUpDiv {
-      width: 60%;
-      margin-left: 20%;
-      margin-top: -150px;
-      position: absolute;
-      text-align: center;
-      background-color: hsl(217, 28%, 15%);
-      box-shadow: 10px 10px hsl(216, 53%, 10%);
-    }
-    
-    #h1-pDiv {
-      padding-left: 13%;
-      padding-right: 13%;
-      margin-top: 50px;
-    }
-    
-    #h1-singUpDiv {
-      font-family: raleway;
-      font-weight: 700;
-      font-size: 2.2vw;
-      color: hsl(0, 0%, 100%);
-      margin-bottom: 30px;
-    }
-    
-    #p-singUpDiv {
-      font-family: openSans;
-      font-weight: 400;
-      font-size: 0.9vw;
-      color: hsl(0, 0%, 80%);
-      margin-bottom: 30px;
-    }
-    
-    #inp-email {
-      width: 53%;
-      height: 45px;
-      background-color: hsl(0, 0%, 100%);
-      color: lightgray;
-      border: none;
-      margin-right: 3%;
-      margin-bottom: 20px;
-      padding-left: 5%;
-      outline: none;
-      /* border-style: none; */
-    }
-    /* #inp-email:focus {
-      outline: none;
-    } */
-    
-    #alert {
-      /* display: none; */
-      color: hsl(0, 100%, 63%);
-      padding-right: 430px;
-      /* padding-top: 0px; */
-      margin-bottom: 20px;
-    }
-    
-    #but-singUpDiv {
-      width: 25%;
-      height: 45px;
-      background-color: hsl(176, 68%, 64%);
-      color: hsl(0, 0%, 100%);
-      border-top: none;
-      border-left: none;
-      font-family: openSans;
-      font-weight: 400;
-      font-size: 1vw;
-      color: hsl(0, 0%, 100%);
-    }
-    
-    #bottomDiv {
-      background-color: hsl(216, 53%, 9%);
-      padding-top: 100px;
-    }
-    
-    #fylo-logo {
-      margin-left: 10%;
-      margin-top: 100px;
-      margin-bottom: 30px;
-    }
-    
-    #icon-bottomDiv {
-      display: flex;
-    }
-    
-    #img-pDiv {
-      width: 30%;
-      margin-left: 10%;
-    }
-    
-    #p-bottomDiv {
-      margin-top: -25px;
-      margin-left: 10%;
-      margin-right: 20%;
-      font-family: openSans;
-      font-weight: 400;
-      font-size: 1vw;
-      color: hsl(0, 0%, 80%);
-    }
-    
-    #phone-emailDiv {
-      width: 20%;
-      font-family: openSans;
-      font-weight: 400;
-      font-size: 1vw;
-      color: hsl(0, 0%, 80%);
-    }
-    
-    #aboutUsDiv,
-    #contactUsDiv {
-      width: 10%;
-    }
-    
-    .a-bottomDiv {
-      text-decoration: none;
-      display: block;
-      font-family: openSans;
-      font-weight: 400;
-      font-size: 1vw;
-      color: hsl(0, 0%, 80%);
-      margin-bottom: 15px;
-    }
-    
-    .a-bottomDiv:hover {
-      color: hsl(0, 0%, 100%);
-    }
-    
-    #socialMediaDiv {
-      display: flex;
-      justify-content: center;
-    }
-    /* Add a hover effect if you want */
-    /* .fa:hover {
-      opacity: 0.7;
-    } */
-    
-    .fa {
-      padding: 5px;
-      font-size: 20px;
-      width: 30px;
-      height: 30px;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 50%;
-      background: hsl(216, 53%, 9%);
-      color: hsl(0, 0%, 80%);
-      margin-right: 15px;
-    }
-    /* .fa:hover {
-      color: hsl(176, 68%, 64%);
-    } */
     
     .attribution {
       font-size: 11px;
@@ -462,12 +809,18 @@
           </div>
         </div>
         <div id="illustrationDiv">
-          <img id="img-illustration" src="images/illustration-intro.png" alt="many pepole">
+          <div id="img-illustrationDiv">
+            <img id="img-illustration" src="images/illustration-intro.png" alt="many pepole">
+          </div>
+          <div id="imgBackgroundDiv-mobile">
+            <img src="images/bg-curvy-mobile.svg" alt="curvy-mobile">
+          </div>
           <h1 id="h1-illustration">All your files in one secure location, accessible anywhere.</h1>
           <p id="p-illustration"> Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
           <button id="but-illustration" class="rounded-pill">Get Started</button>
         </div>
         <div id="imgBackgroundDiv"><img src="images/bg-curvy-desktop.svg" alt="curvy-desktop"></div>
+        <!-- <div id="imgBackgroundDiv-mobile"><img src="images/bg-curvy-mobile.svg" alt="curvy-mobile"></div> -->
         <div id="bottomBackgroundDiv">
           <div class="twoDiv">
             <div id="access-anywhereDiv">
@@ -497,7 +850,7 @@
           </div>
           <div id="illustration-stay-productiveDiv">
             <div id="left-illustration-stay-productiveDiv">
-              <img src="images/illustration-stay-productive.png" alt="pepoles and computer">
+              <img id="img-illustration-stay-productiveDiv" src="images/illustration-stay-productive.png" alt="pepoles and computer">
             </div>
             <div id="right-illustration-stay-productiveDiv">
               <h1 id="h1-illustration-stay-productiveDiv">Stay productive, wherever you are</h1>
@@ -505,12 +858,9 @@
                 Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
 
               <p class="p-illustration-stay-productiveDiv">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
-              <!-- <div id="inner-illustration-stay-productiveDiv"> -->
-              <a id="a-illustration-stay-productiveDiv" href="#" onmouseover="illustrationFunction()">See how Fylo works</a>
-              <!-- <img id="img-illustration-stay-productiveDiv" src="images/icon-arrow.svg" alt="icon-arrow"> -->
-              <svg id="img-illustration-stay-productiveDiv" width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="b" cx="6" cy="6" r="6"/><filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a"><feOffset in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0" in="shadowBlurOuter1"/></filter></defs><g fill="none" fill-rule="evenodd"><g transform="translate(2 2)"><use fill="#000" filter="url(#a)" xlink:href="#b"/><use id="test-change" fill="#62E0D9" xlink:href="#b"/></g><path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#1B2330"/></g></svg>
+              <a id="a-illustration-stay-productiveDiv" href="#" onmouseover="illustrationFunction()" onmouseout="illustrationFunction2()">See how Fylo works</a>
+              <svg id="img-arrow-illustration-stay-productiveDiv" width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="b" cx="6" cy="6" r="6"/><filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a"><feOffset in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0" in="shadowBlurOuter1"/></filter></defs><g fill="none" fill-rule="evenodd"><g transform="translate(2 2)"><use fill="#000" filter="url(#a)" xlink:href="#b"/><use id="test-change" fill="#62E0D9" xlink:href="#b"/></g><path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#1B2330"/></g></svg>
               <hr id="hr-illustration-stay-productiveDiv">
-              <!-- </div> -->
             </div>
           </div>
 
@@ -532,7 +882,7 @@
               </div>
               <p class="founder">Founder & CEO, Huddle</p>
             </div>
-            <div class="comment rounded-3">
+            <div id="comment3" class="comment rounded-3">
               <p class="p-comment">
                 Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
               <div class="profileDiv">
@@ -549,7 +899,7 @@
                 <p id="p-singUpDiv"> It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
               </div>
               <div id="emailDiv">
-                <input type="email" required id="inp-email" class="rounded-pill" placeholder="Inter your email">
+                <input type="email" required id="inp-email" class="rounded-pill" placeholder="email@example.com">
                 <button id="but-singUpDiv" type="submit" onclick="alertFunction()" class="rounded-pill">Get Started For Free</button>
                 <div id="alert"></div>
               </div>
@@ -567,9 +917,9 @@
             <p id="p-bottomDiv"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
           </div>
           <div id="phone-emailDiv">
-            <img src="images/icon-phone.svg" alt="icon-phone"><label>+1-543-123-4567</label><br>
+            <img id="phone" src="images/icon-phone.svg" alt="icon-phone"><label>+1-543-123-4567</label><br>
             <br>
-            <img src="images/icon-email.svg" alt="icon-email"><label> example@fylo.com</label>
+            <img id="email" src="images/icon-email.svg" alt="icon-email"><label> example@fylo.com</label>
           </div>
           <div id="aboutUsDiv">
             <a class="a-bottomDiv" href="#">About Us</a>
@@ -605,14 +955,19 @@
       document.getElementById('test-change').style.fill = "hsl(0, 0%, 100%)";
       document.getElementById('hr-illustration-stay-productiveDiv').style.color = "hsl(0, 0%, 100%)";
     }
+
+    function illustrationFunction2() {
+      document.getElementById('a-illustration-stay-productiveDiv').style.color = "hsl(176, 68%, 64%)";
+      document.getElementById('test-change').style.fill = "hsl(176, 68%, 64%)";
+      document.getElementById('hr-illustration-stay-productiveDiv').style.color = "hsl(176, 68%, 64%)";
+    }
     $("#form-id").validate({
       errorPlacement: function(error, element) {}
     });
 
     function alertFunction() {
       if ($("#form-id").valid() == false) {
-        // $('#alert').show();
-        document.getElementById("alert").innerHTML = "Please provide a valid email.";
+        document.getElementById("alert").innerHTML = "Please enter a valid email address";
 
       }
     }
